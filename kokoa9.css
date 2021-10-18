@@ -1,0 +1,123 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.body__box {
+  border: 8px solid #02c5ab;
+  width: 400px;
+  height: 900px;
+  padding: 20px;
+}
+.body__box__menu {
+  display: flex;
+}
+.body__box__column {
+  width: 33%;
+  display: flex;
+  align-items: center;
+}
+.body__box__column:last-child {
+  display: flex;
+  justify-content: center;
+}
+.body__box__stream-music {
+  display: flex;
+  margin-top: 10px;
+}
+.body__box__stream-music__picture {
+  background-color: #ffbd11;
+  width: 150px;
+  height: 150px;
+  border: 3px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body__box__stream-music__info {
+  margin-left: 20px;
+}
+.body__box__stream-music__name {
+  font-size: 45px;
+  font-weight: bolder;
+  display: block;
+  position: relative;
+  top: 5px;
+  line-height: 50px;
+  width: 200px;
+}
+.body__box__stream-music__singer {
+  font-weight: bold;
+  position: relative;
+  top: 20px;
+  font-size: 20px;
+}
+.body__box__play-music {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+  padding-right: 5px;
+}
+button {
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+}
+.body__box__play-music__play {
+  height: 75px;
+  width: 200px;
+  border-radius: 20px;
+  border-width: 2px 2px 6px 2px;
+}
+.body__box__play-music__play__size {
+  font-size: 20px;
+  font-weight: bold;
+}
+.body__box__play-music__heart-plus {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border-width: 2px;
+  box-shadow: 0px 6px black;
+}
+.music {
+  display: flex;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.music::before {
+  content: "";
+  border: 2px solid black;
+  height: 75px;
+  width: 75px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.music:first-child::before {
+  background-color: #f85a2a;
+}
+.music:nth-child(2)::before {
+  background-color: #ff89bb;
+}
+.music:nth-child(3)::before {
+  background-color: #1947e5;
+}
+.music:last-child::before {
+  background-color: #00c6ad;
+  margin-bottom: 0px;
+}
+.body__box__music-playlist__songname {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+.music-singer {
+  margin-left: 10px;
+  position: relative;
+  top: 10px;
+}
